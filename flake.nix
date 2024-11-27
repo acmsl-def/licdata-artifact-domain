@@ -26,7 +26,7 @@
         "pythoneda-shared-pythonlang-banner";
       inputs.pythoneda-shared-pythonlang-domain.follows =
         "pythoneda-shared-pythonlang-domain";
-      url = "github:acmsl-def/licdata-artifact-events/0.0.4";
+      url = "github:acmsl-def/licdata-artifact-events/0.0.5";
     };
     acmsl-licdata-artifact-events-infrastructure = {
       inputs.nixos.follows = "nixos";
@@ -36,7 +36,7 @@
         "pythoneda-shared-pythonlang-banner";
       inputs.pythoneda-shared-pythonlang-domain.follows =
         "pythoneda-shared-pythonlang-domain";
-      url = "github:acmsl-def/licdata-artifact-events-infrastructure/0.0.4";
+      url = "github:acmsl-def/licdata-artifact-events-infrastructure/0.0.5";
     };
     azure-functions = {
       inputs.nixos.follows = "nixos";
@@ -55,7 +55,7 @@
       inputs.nixos.follows = "nixos";
       inputs.pythoneda-shared-pythonlang-banner.follows =
         "pythoneda-shared-pythonlang-banner";
-      url = "github:pythoneda-shared-pythonlang-def/domain/0.0.85";
+      url = "github:pythoneda-shared-pythonlang-def/domain/0.0.86";
     };
     pythoneda-shared-pythonlang-infrastructure = {
       inputs.flake-utils.follows = "flake-utils";
@@ -64,7 +64,7 @@
         "pythoneda-shared-pythonlang-banner";
       inputs.pythoneda-shared-pythonlang-domain.follows =
         "pythoneda-shared-pythonlang-domain";
-      url = "github:pythoneda-shared-pythonlang-def/infrastructure/0.0.62";
+      url = "github:pythoneda-shared-pythonlang-def/infrastructure/0.0.63";
     };
     pythoneda-shared-pythonlang-application = {
       inputs.flake-utils.follows = "flake-utils";
@@ -75,7 +75,7 @@
         "pythoneda-shared-pythonlang-domain";
       inputs.pythoneda-shared-pythonlang-infrastructure.follows =
         "pythoneda-shared-pythonlang-infrastructure";
-      url = "github:pythoneda-shared-pythonlang-def/application/0.0.82";
+      url = "github:pythoneda-shared-pythonlang-def/application/0.0.83";
     };
     pythoneda-shared-pythonlang-artf-domain = {
       inputs.flake-utils.follows = "flake-utils";
@@ -84,7 +84,7 @@
         "pythoneda-shared-pythonlang-banner";
       inputs.pythoneda-shared-pythonlang-domain.follows =
         "pythoneda-shared-pythonlang-domain";
-      url = "github:pythoneda-shared-pythonlang-artf-def/domain/0.0.61";
+      url = "github:pythoneda-shared-pythonlang-artf-def/domain/0.0.62";
     };
     pythoneda-shared-pythonlang-artf-infrastructure = {
       inputs.flake-utils.follows = "flake-utils";
@@ -95,7 +95,7 @@
         "pythoneda-shared-pythonlang-domain";
       inputs.pythoneda-shared-pythonlang-infrastructure.follows =
         "pythoneda-shared-pythonlang-infrastructure";
-      url = "github:pythoneda-shared-pythonlang-artf-def/infrastructure/0.0.52";
+      url = "github:pythoneda-shared-pythonlang-artf-def/infrastructure/0.0.53";
     };
     pythoneda-shared-pythonlang-artf-application = {
       inputs.flake-utils.follows = "flake-utils";
@@ -104,7 +104,7 @@
         "pythoneda-shared-pythonlang-banner";
       inputs.pythoneda-shared-pythonlang-domain.follows =
         "pythoneda-shared-pythonlang-domain";
-      url = "github:pythoneda-shared-pythonlang-artf-def/application/0.0.36";
+      url = "github:pythoneda-shared-pythonlang-artf-def/application/0.0.37";
     };
   };
   outputs = inputs:
@@ -113,8 +113,8 @@
       let
         org = "acmsl";
         repo = "licdata-artifact";
-        version = "0.0.3";
-        sha256 = "1nh23v8ykf55mkw93785lx8m06g5l4mxsw12ywsfc28i9gsy0d6p";
+        version = "0.0.5";
+        sha256 = "111d6myhxnkbrs05cd1i4pvkzhb45crkjjfvzgracrnlaarvym3g";
         pname = "${org}-${repo}";
         pythonpackage = "org.acmsl.artifact.licdata";
         package = builtins.replaceStrings [ "." ] [ "/" ] pythonpackage;
