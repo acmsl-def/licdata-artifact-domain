@@ -1,8 +1,8 @@
 # templates/pyprojecttoml.template
 #
-# This file is the template for acmsl's Licdata Artifact
+# This file is the template for acmsl's Licdata Artifact Domain
 #
-# Copyright (C) 2024-today acmsl's licdata
+# Copyright (C) 2024-today acmsl's licdata-artifact-domain
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -27,15 +27,10 @@ packages = [{include = "@package@"}]
 
 [tool.poetry.dependencies]
 acmsl-licdata-artifact-events = "^@acmslLicdataArtifactEvents@"
-acmsl-licdata-artifact-events-infrastructure = "^@acmslLicdataArtifactEventsInfrastructure@"
 python = "^@pythonMajorMinorVersion@"
 pythoneda-shared-pythonlang-banner = "^@pythonedaSharedPythonlangBanner@"
 pythoneda-shared-pythonlang-domain = "^@pythonedaSharedPythonlangDomain@"
-pythoneda-shared-pythonlang-infrastructure = "^@pythonedaSharedPythonlangInfrastructure@"
-pythoneda-shared-pythonlang-application = "^@pythonedaSharedPythonlangApplication@"
 pythoneda-shared-pythonlang-artf-domain = "^@pythonedaSharedPythonlangArtfDomain@"
-pythoneda-shared-pythonlang-artf-infrastructure = "^@pythonedaSharedPythonlangArtfInfrastructure@"
-pythoneda-shared-pythonlang-artf-application = "^@pythonedaSharedPythonlangArtfApplication@"
 
 [build-system]
 requires = ["poetry-core"]

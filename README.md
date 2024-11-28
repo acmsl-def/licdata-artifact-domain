@@ -1,2 +1,3 @@
-# licdata-artifact-def
-Artifact definition for acmsl/licdata
+# licdata-artifact-domain
+
+Artifact definition for [Licdata Artifact Domain](https://github.com/acmsl/licdata-artifact-domain "Licdata Artifact Domain")
