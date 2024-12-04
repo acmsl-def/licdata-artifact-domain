@@ -36,7 +36,7 @@
         "pythoneda-shared-pythonlang-banner";
       inputs.pythoneda-shared-pythonlang-domain.follows =
         "pythoneda-shared-pythonlang-domain";
-      url = "github:acmsl-def/licdata-artifact-events-infrastructure/0.0.12";
+      url = "github:acmsl-def/licdata-artifact-events-infrastructure/0.0.13";
     };
     azure-functions = {
       inputs.nixos.follows = "nixos";
@@ -73,8 +73,8 @@
       let
         org = "acmsl";
         repo = "licdata-artifact-domain";
-        version = "0.0.8";
-        sha256 = "1rncwin3kp7x1ivn5d5w2zsn4nrpwl9vdw1adsgl97w6a8p3k467";
+        version = "0.0.9";
+        sha256 = "0q37wxcdk1q9wicfymkv04g21qfjp6hnarhhib20scrdkgqz3ivw";
         pname = "${org}-${repo}";
         pythonpackage = "org.acmsl.artifact.licdata.domain";
         package = builtins.replaceStrings [ "." ] [ "/" ] pythonpackage;
