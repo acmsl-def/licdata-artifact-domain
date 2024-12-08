@@ -64,7 +64,7 @@
         "pythoneda-shared-pythonlang-banner";
       inputs.pythoneda-shared-pythonlang-domain.follows =
         "pythoneda-shared-pythonlang-domain";
-      url = "github:pythoneda-shared-pythonlang-artf-def/domain/0.0.72";
+      url = "github:pythoneda-shared-pythonlang-artf-def/domain/0.0.73";
     };
   };
   outputs = inputs:
@@ -73,8 +73,8 @@
       let
         org = "acmsl";
         repo = "licdata-artifact-domain";
-        version = "0.0.10";
-        sha256 = "1yiinp1913hngyy7rjc8a6xx3ialdfx7psg824vm047ay6a9cr5b";
+        version = "0.0.18";
+        sha256 = "0k3v8rl1sxldl7mhlsid8r57b52zgqimxvsr1sl3wmjwi0lv89h3";
         pname = "${org}-${repo}";
         pythonpackage = "org.acmsl.artifact.licdata.domain";
         package = builtins.replaceStrings [ "." ] [ "/" ] pythonpackage;
