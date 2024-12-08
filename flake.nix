@@ -111,7 +111,7 @@
               authors = builtins.concatStringsSep ","
                 (map (item: ''"${item}"'') maintainers);
               desc = description;
-              dockerPy = python.pkgs.docker-py.version;
+              docker = python.pkgs.docker.version;
               inherit homepage pname pythonMajorMinorVersion pythonpackage
                 version;
               acmslLicdataArtifactEvents = acmsl-licdata-artifact-events.version;
@@ -135,7 +135,7 @@
             nativeBuildInputs = with python.pkgs; [ pip poetry-core ];
             propagatedBuildInputs = with python.pkgs; [
               acmsl-licdata-artifact-events
-              docker-py
+              docker
               pythoneda-shared-pythonlang-banner
               pythoneda-shared-pythonlang-domain
               pythoneda-shared-pythonlang-artf-domain
