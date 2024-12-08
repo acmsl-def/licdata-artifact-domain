@@ -41,7 +41,7 @@
     azure-functions = {
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
-      url = "github:rydnr/nix-flakes/azure-functions-1.21.3.0?dir=azure-functions";
+      url = "github:rydnr/nix-flakes/azure-functions-1.21.3.2?dir=azure-functions";
     };
     flake-utils.url = "github:numtide/flake-utils/v1.0.0";
     nixpkgs.url = "github:NixOS/nixpkgs/24.05";
@@ -111,6 +111,7 @@
               authors = builtins.concatStringsSep ","
                 (map (item: ''"${item}"'') maintainers);
               desc = description;
+              dockerPy = python.pkgs.docker-py.version;
               inherit homepage pname pythonMajorMinorVersion pythonpackage
                 version;
               acmslLicdataArtifactEvents = acmsl-licdata-artifact-events.version;
@@ -134,6 +135,7 @@
             nativeBuildInputs = with python.pkgs; [ pip poetry-core ];
             propagatedBuildInputs = with python.pkgs; [
               acmsl-licdata-artifact-events
+              docker-py
               pythoneda-shared-pythonlang-banner
               pythoneda-shared-pythonlang-domain
               pythoneda-shared-pythonlang-artf-domain
