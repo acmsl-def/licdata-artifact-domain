@@ -32,6 +32,7 @@ python = "^@pythonMajorMinorVersion@"
 pythoneda-shared-pythonlang-banner = "^@pythonedaSharedPythonlangBanner@"
 pythoneda-shared-pythonlang-domain = "^@pythonedaSharedPythonlangDomain@"
 pythoneda-shared-pythonlang-artf-domain = "^@pythonedaSharedPythonlangArtfDomain@"
+pythoneda-shared-runtime-secrets-events = "^@pythonedaSharedRuntimeSecretsEvents@"
 
 [build-system]
 requires = ["poetry-core"]
