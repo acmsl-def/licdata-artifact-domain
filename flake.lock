@@ -1152,7 +1152,7 @@
       },
       "original": {
         "owner": "pythoneda-shared-pythonlang-def",
-        "ref": "0.0.102",
+        "ref": "0.0.103",
         "repo": "domain",
         "type": "github"
       }
@@ -1340,6 +1340,36 @@
         "type": "github"
       }
     },
+    "pythoneda-shared-runtime-secrets-events": {
+      "inputs": {
+        "flake-utils": [
+          "flake-utils"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "pythoneda-shared-pythonlang-banner": [
+          "pythoneda-shared-pythonlang-banner"
+        ],
+        "pythoneda-shared-pythonlang-domain": [
+          "pythoneda-shared-pythonlang-domain"
+        ]
+      },
+      "locked": {
+        "lastModified": 1734078133,
+        "narHash": "sha256-nladCtk5P1ZECYLMUnn5j4s7bZcwt2Ooj7x2MAeW8sw=",
+        "owner": "pythoneda-shared-runtime-def",
+        "repo": "secrets-events",
+        "rev": "80080f126aa97b8dc4fda71a57734cb589c14fb7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pythoneda-shared-runtime-def",
+        "ref": "0.0.4",
+        "repo": "secrets-events",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "acmsl-licdata-artifact-events": "acmsl-licdata-artifact-events",
@@ -1349,7 +1379,8 @@
         "nixpkgs": "nixpkgs",
         "pythoneda-shared-pythonlang-artf-domain": "pythoneda-shared-pythonlang-artf-domain",
         "pythoneda-shared-pythonlang-banner": "pythoneda-shared-pythonlang-banner_2",
-        "pythoneda-shared-pythonlang-domain": "pythoneda-shared-pythonlang-domain_6"
+        "pythoneda-shared-pythonlang-domain": "pythoneda-shared-pythonlang-domain_6",
+        "pythoneda-shared-runtime-secrets-events": "pythoneda-shared-runtime-secrets-events"
       }
     },
     "stringtemplate3": {
