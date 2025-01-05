@@ -64,7 +64,7 @@
         "pythoneda-shared-pythonlang-banner";
       inputs.pythoneda-shared-pythonlang-domain.follows =
         "pythoneda-shared-pythonlang-domain";
-      url = "github:pythoneda-shared-pythonlang-artf-def/domain/0.0.83";
+      url = "github:pythoneda-shared-pythonlang-artf-def/domain/0.0.84";
     };
     pythoneda-shared-runtime-secrets-events = {
       inputs.flake-utils.follows = "flake-utils";
@@ -82,8 +82,8 @@
       let
         org = "acmsl";
         repo = "licdata-artifact-domain";
-        version = "0.0.15";
-        sha256 = "1wydjhbdf4wv7mcx3g5c7ilnm9dcf95c8y3nw7z1pyf0j5wdaqrw";
+        version = "0.0.16";
+        sha256 = "06h6vdz0km6lyf78my7zigvpmbzv7dh4z90bikqyx8jng1ss4s01";
         pname = "${org}-${repo}";
         pythonpackage = "org.acmsl.artifact.licdata.domain";
         package = builtins.replaceStrings [ "." ] [ "/" ] pythonpackage;
