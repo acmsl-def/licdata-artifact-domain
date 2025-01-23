@@ -41,7 +41,7 @@
     azure-functions = {
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
-      url = "github:rydnr/nix-flakes/azure-functions-1.21.3.2?dir=azure-functions";
+      url = "github:rydnr/nix-flakes/azure-functions-1.21.3.3?dir=azure-functions";
     };
     flake-utils.url = "github:numtide/flake-utils/v1.0.0";
     nixpkgs.url = "github:NixOS/nixpkgs/24.05";
