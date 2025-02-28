@@ -26,7 +26,7 @@
         "pythoneda-shared-pythonlang-banner";
       inputs.pythoneda-shared-pythonlang-domain.follows =
         "pythoneda-shared-pythonlang-domain";
-      url = "github:acmsl-def/licdata-artifact-events/0.0.32";
+      url = "github:acmsl-def/licdata-artifact-events/0.0.33";
     };
     acmsl-licdata-artifact-events-infrastructure = {
       inputs.nixpkgs.follows = "nixpkgs";
@@ -36,7 +36,7 @@
         "pythoneda-shared-pythonlang-banner";
       inputs.pythoneda-shared-pythonlang-domain.follows =
         "pythoneda-shared-pythonlang-domain";
-      url = "github:acmsl-def/licdata-artifact-events-infrastructure/0.0.35";
+      url = "github:acmsl-def/licdata-artifact-events-infrastructure/0.0.36";
     };
     azure-functions = {
       inputs.nixpkgs.follows = "nixpkgs";
@@ -48,14 +48,14 @@
     pythoneda-shared-pythonlang-banner = {
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
-      url = "github:pythoneda-shared-pythonlang-def/banner/0.0.83";
+      url = "github:pythoneda-shared-pythonlang-def/banner/0.0.85";
     };
     pythoneda-shared-pythonlang-domain = {
       inputs.flake-utils.follows = "flake-utils";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.pythoneda-shared-pythonlang-banner.follows =
         "pythoneda-shared-pythonlang-banner";
-      url = "github:pythoneda-shared-pythonlang-def/domain/0.0.128";
+      url = "github:pythoneda-shared-pythonlang-def/domain/0.0.131";
     };
     pythoneda-shared-pythonlang-artf-domain = {
       inputs.flake-utils.follows = "flake-utils";
@@ -64,7 +64,7 @@
         "pythoneda-shared-pythonlang-banner";
       inputs.pythoneda-shared-pythonlang-domain.follows =
         "pythoneda-shared-pythonlang-domain";
-      url = "github:pythoneda-shared-pythonlang-artf-def/domain/0.0.95";
+      url = "github:pythoneda-shared-pythonlang-artf-def/domain/0.0.98";
     };
     pythoneda-shared-runtime-secrets-events = {
       inputs.flake-utils.follows = "flake-utils";
@@ -73,7 +73,7 @@
         "pythoneda-shared-pythonlang-banner";
       inputs.pythoneda-shared-pythonlang-domain.follows =
         "pythoneda-shared-pythonlang-domain";
-      url = "github:pythoneda-shared-runtime-def/secrets-events/0.0.21";
+      url = "github:pythoneda-shared-runtime-def/secrets-events/0.0.24";
     };
   };
   outputs = inputs:
@@ -82,8 +82,8 @@
       let
         org = "acmsl";
         repo = "licdata-artifact-domain";
-        version = "0.0.20";
-        sha256 = "0z3g029fllv2zddgb7x3y50wcp51k3vx8sx0qmd2gsw5b9l6b0mb";
+        version = "0.0.21";
+        sha256 = "1j27pfzc0f6b4cihjfbqrd2x2d8qfrx60yr32nlajzaydryzzbak";
         pname = "${org}-${repo}";
         pythonpackage = "org.acmsl.artifact.licdata.domain";
         package = builtins.replaceStrings [ "." ] [ "/" ] pythonpackage;
